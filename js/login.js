@@ -41,7 +41,8 @@ $('#btnLogin').click(function(){
 	}
 });
 $('#btnExit').click(function(){
-	navigator.app.exitApp();
+	//navigator.app.exitApp();
+	window.close();
 });
 $('.divClose').click(function(){
 	$('.pop-up').css("display","none");
