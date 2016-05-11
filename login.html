@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Simple Sidebar - Start Bootstrap Template</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/simple-sidebar.css" rel="stylesheet">
+<link href="css/bootsrap-theme.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<style>
+  .wholeContainer{
+    z-index: 1001;
+  }
+  .divBlack{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0,0,0);
+    opacity: 0.6;
+    z-index: 1002;
+  }
+  .divWhite{
+    position: fixed;
+    background-color: rgb(255,255,255);
+    top: 25%;
+    left: 25%;
+    bottom: 25%;
+    right: 25%;
+    box-shadow: 0 0 50px rgb(0,0,0);
+    z-index: 1003;
+    border-radius: 5px;
+  }
+  .pop-up{
+    display: none;
+  }
+  .divClose{
+    position: fixed;
+    z-index: 1004;
+    border-radius: 55px;
+    background-color: rgb(50,50,50);
+    color: rgb(255,255,255);
+    width: 3em;
+    height: 3em;
+    top: 10em;
+    left: 73%;
+    text-align: center;
+    cursor: pointer;
+  }
+  .divClose span{
+    position: relative;
+    font-size: 27px;
+    font-family: monospace;
+  }
+  .loadImg{
+    position: relative;
+    top: 2em;
+    display: none;
+  }
+  .fillmissing{
+    color: rgb(255,0,0);
+    position: relative;
+    top: 2em;
+    display: none;
+  }
+</style>
+</head>
+<body>
+<div class="wholeContainer">
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #085394;">
+<div class="container-fluid">
+  <div class="navbar-header">
+   
+    
+  </div>
+
+</nav>
+<div class="container">
+  <div class="row">
+  <center>
+<img src="images/temp.png" style="width:25%;height:auto;">
+</center>
+</div>
+
+
+  <div class="row" style="padding-top: 10px; padding-left: 10px; padding-right: 10px;">
+
+    <input type="email" id="txtUsername" placeholder="Username" class="form-control"></input>
+   
+
+  </div>
+  <div class="row" style="padding-top: 10px; padding-left: 10px; padding-right: 10px;">
+ <input type="password" id="txtPassword" placeholder="Password" class="form-control" style="padding: 10px;"></input>
+  </div>
+  
+
+<div class="btn-group btn-group-justified" role="group" aria-label="..." style="padding: 10px;">
+  <div class="btn-group" role="group">
+    <button type="button" id="btnLogin" class="btn btn-primary">Login</button>
+  </div>
+
+  <div class="btn-group" role="group">
+    <button type="button" id="btnExit" class="btn btn-primary">Exit</button>
+
+  </div>
+  
+</div>
+  </div>
+  
+</div>
+</div>
+<center>
+  <div class="alert alert-danger fillmissing" role="alert">Please fill the missing field/s</div>
+</center>
+<center>
+<img src="images/load.gif" class="loadImg">
+</center>
+<div class="divBlack pop-up"></div>
+<div class="divWhite pop-up"></div>
+<div class="divClose pop-up"><span>x</span></div>
+  <script src="js/jquery.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/login.js"></script>
+  </body>
+  </html>
+  
